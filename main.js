@@ -4,8 +4,11 @@ function calculateTax() {
 
 let year = document.getElementById("year").value;
 let tax;
-let income = person2 ? (person1 + person2) / 2 : person1;
+
+
+let income = person2 ? (parseInt(person1) + parseInt(person2)) / 2 : person1;
     
+
 
     switch (year) {
         case "2018":
